@@ -42,7 +42,7 @@ const ShoppingList = {
       throw StorageException(
         `Can't update item \`${id}\` because doesn't exist.`)
     }
-    this.items[updatedItem.id] = updatedItem;
+    this.items[updatedItem.id] = updatedItem;       //assign new object in place of old object in items?
     return updatedItem;
   }
 };
